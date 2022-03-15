@@ -1,0 +1,24 @@
+@use 'src/theme';
+
+.header{
+  font-size: 1rem;
+  &__contacts{
+    margin: 0;
+    &--theme--main{
+      border-bottom: 1px solid theme.$nav_contacts_border_main ;
+    }
+    &--font--size--medium{
+      font-size: 1.5rem;
+    }
+  }
+  &__socials{
+    margin: 1.5rem 1rem 0 0;
+  }
+  &__logo{
+    margin: 1.5rem auto 0;
+  }
+  &__nav{
+    margin: 1.2rem 0 0 0;
+  }
+
+}
