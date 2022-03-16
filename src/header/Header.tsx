@@ -5,12 +5,7 @@ import React from "react";
 import "./Header.scss";
 
 export default function Header (...props:any) {
-    let contacts = [
-       ,
-    ];
-    let socials = [
 
-    ];
     return(
         <header className = "header">
             <Contacts className= "header__contacts header__contacts--theme--main">
