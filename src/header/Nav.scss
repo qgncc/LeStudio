@@ -16,8 +16,8 @@
     border-radius: 10%;
   }
   &__link:hover{
-    color: theme.$nav_link_hover_text_main;
-    background-color: theme.$nav_link_hover_main;
+    color: theme.$nav_link_text_hover_main;
+    background-color: theme.$nav_link_background_hover_main;
   }
   &--theme-main{
     background-color: theme.$nav_background_main;

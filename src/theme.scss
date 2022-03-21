@@ -2,12 +2,14 @@ $orange: rgb(251, 193, 176);
 $orange_dark: rgb(248, 126, 87);
 $orange_light: rgb(206, 178, 168);
 $white: rgb(255,255,255);
+$white_semitransparent: rgba(255,255,255,0.4);
 $black: rgb(0,0,0);
 $gray: rgb(24, 24, 24);
 $black_semitransparent: rgba(0,0,0,0.4);
 
 $nav_background_main: $orange;
-$nav_link_hover_main: $orange_dark;
+$nav_link_text_hover_main: $orange_dark;
+$nav_link_background_hover_main: $white_semitransparent;
 $nav_contacts_border_main: $orange_dark;
 $text_color_main: $black;
 $collection_note_background: $black_semitransparent;
