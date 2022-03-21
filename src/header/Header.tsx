@@ -30,6 +30,7 @@ export default function Header (...props:any) {
                 <a href="#" className="nav__link">Новости</a>
                 <a href="#" className="nav__link">Контакты</a>
             </Nav>
+
         </header>
     );
 }
