@@ -1,4 +1,3 @@
-@use "icon";
 @use "theme";
 @import url("https://unicons.iconscout.com/release/v4.0.0/css/line.css");
 body {
@@ -30,4 +29,8 @@ code {
   &--bg--lightGray{
     background-color: theme.$aboutme_card_text_background_main;
   }
+}
+.icon{
+  font-size: 1em;
+  padding: 0.2em;
 }
