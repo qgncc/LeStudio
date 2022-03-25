@@ -1,22 +1,36 @@
 import "./Collection.scss";
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import {Props} from "../header/types";
 import options from "../options";
 
-interface CollectionProps extends Props{
-    items:{imgLink: string, text:string}[];
-}
 
 
-export default function Collection(props: CollectionProps) {
-    let items = props.items;
+export default function Collection(props: Omit<Props,"children">) {
+    let [images, setImages] = useState({
+        items:[
+            {
+                src: "",
+                text: ""
+            }
+        ]
+    });
 
-    let elements = items.map((element,index)=>{
+
+    async function fetchCollectionImages(){
+         let data = await fetch(options.host+"api/module/collection");
+         let json = await data.json();
+         setImages(json);
+    }
+    useEffect(()=>{
+        fetchCollectionImages();
+    },[]);
+
+    let elements = images.items.map((item,index)=>{
         return(
-            <div style={{backgroundImage:`url(${options.host+element.imgLink})`}}
+            <div style={{backgroundImage:`url(${options.host+item.src})`}}
                  className = "collection__item"
                  key={index}>
-                <div className = "collection__text"> {element.text}</div>
+                <div className = "collection__text"> {item.text}</div>
             </div>
 
         );
