@@ -39,8 +39,8 @@ export function AboutMeBlock(){
     let src = contentJSON.image;
 
     return(
-        <div className = "about">
-            <SquareImage className = {"about__image"}src={src===""?"":options.host+src}/>
+        <div className = "section">
+            <SquareImage size={"medium"} className = {"about__image"}src={src===""?"":options.host+src}/>
             <Card className={"about__card"}>
                 {cardContent}
             </Card>

@@ -1,14 +1,1 @@
-@use "../theme";
-.about{
-  background-color: theme.$aboutme_card_text_background_main;
-  display: flex;
-  flex-direction: row;
-  padding: 4rem 0 2rem 0;
-  align-items: flex-start;
-  justify-content: center;
-  &__card{
-    margin: 0 0 0 2rem;
-  }
-  &__image{
-  }
-}
+@use "../index";
