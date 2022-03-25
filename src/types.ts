@@ -1,6 +1,6 @@
-import {ReactElement} from "react";
+import {ReactNode} from "react";
 
 export interface Props{
     className?: string;
-    children?: ReactElement[];
+    children?: ReactNode[]|ReactNode;
 }

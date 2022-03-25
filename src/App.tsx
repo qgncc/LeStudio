@@ -3,6 +3,7 @@ import Header from "./header/Header";
 import './App.css';
 import Collection from "./collection/Collection";
 import options from "./options";
+import {AboutMeBlock} from "./aboutme/Aboutme";
 
 function hashCode(str:string) {
     let hash = 0, i, chr;
@@ -22,7 +23,7 @@ function App() {
     let [images, setImages] = useState([{imgLink:"", text:""}]);
     async function fetchCollectionImages(){
         return fetch(
-            options.host+"api/images/collection",
+            options.host+"api/module/collection",
             { mode: 'cors',}
         ).then(res=>res.json())
     }
@@ -35,8 +36,9 @@ function App() {
 
     return (
         <div className="App">
-        <Header/>
-        <Collection items = {images}/>
+            <Header/>
+            <Collection items = {images}/>
+            <AboutMeBlock/>
         </div>
 );
 }

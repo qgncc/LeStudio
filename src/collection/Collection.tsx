@@ -13,7 +13,7 @@ export default function Collection(props: CollectionProps) {
 
     let elements = items.map((element,index)=>{
         return(
-            <div style={{backgroundImage:`url(${options.host+"images/collection/"+element.imgLink})`}}
+            <div style={{backgroundImage:`url(${options.host+element.imgLink})`}}
                  className = "collection__item"
                  key={index}>
                 <div className = "collection__text"> {element.text}</div>
