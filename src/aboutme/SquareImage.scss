@@ -1,8 +1,12 @@
 .squareImage{
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
+  object-position: top;
   &--size--medium{
     height:450px;
     width: 450px;
+  }
+  &--size--small{
+    height:250px;
+    width: 250px;
   }
 }

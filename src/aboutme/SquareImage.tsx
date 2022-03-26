@@ -11,7 +11,7 @@ export function SquareImage(props: SquareImageProps) {
     let className = props.className === undefined? "": props.className;
     className+= " squareImage--size--"+props.size;
     return(
-        <div style={{backgroundImage:`url(${props.src})`}}
+        <img src={props.src}
              className ={"squareImage "+ className}/>
     );
 }

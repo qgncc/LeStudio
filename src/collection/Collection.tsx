@@ -2,6 +2,7 @@ import "./Collection.scss";
 import React, {useEffect, useState} from "react"
 import {Props} from "../header/types";
 import options from "../options";
+import {getModuleData} from "../controllers/module_controller";
 
 
 
@@ -16,13 +17,10 @@ export default function Collection(props: Omit<Props,"children">) {
     });
 
 
-    async function fetchCollectionImages(){
-         let data = await fetch(options.host+"api/module/collection");
-         let json = await data.json();
-         setImages(json);
-    }
+
     useEffect(()=>{
-        fetchCollectionImages();
+        getModuleData("collection")
+            .then(data=>setImages(data));
     },[]);
 
     let elements = images.items.map((item,index)=>{

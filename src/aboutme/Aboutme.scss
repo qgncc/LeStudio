@@ -1,1 +1,12 @@
 @use "../index";
+
+.aboutme{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  &__card{
+    margin-left: 2rem;
+  }
+}

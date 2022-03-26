@@ -3,6 +3,7 @@ import Header from "./header/Header";
 import './App.css';
 import Collection from "./collection/Collection";
 import {AboutMeBlock} from "./aboutme/Aboutme";
+import {ServicesBlock} from "./services/Services";
 
 // function hashCode(str:string) {
 //     let hash = 0, i, chr;
@@ -22,7 +23,8 @@ function App() {
         <div className="App">
             <Header/>
             <Collection/>
-            <AboutMeBlock/>
+            <AboutMeBlock bg="lightGray"/>
+            <ServicesBlock bg="white"/>
         </div>
 );
 }

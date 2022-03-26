@@ -17,17 +17,46 @@ code {
 
 .section{
   display: flex;
-  flex-direction: row;
-  padding: 4rem 0 2rem 0;
-  align-items: flex-start;
   justify-content: center;
+  padding: 4rem 0 2rem 0;
+  &__aboutme{
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  &__title{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 2rem;
+    &::before, &::after{
+      width: 33%;
+      content:"";
+      display: inline-block;
+      border-top: 2px solid theme.$orange;
+      margin-top: 1rem;
+    }
+  }
+
   &__card{
-    margin: 0 0 0 2rem;
+    margin:1rem 0;
   }
   &__image{
   }
   &--bg--lightGray{
-    background-color: theme.$aboutme_card_text_background_main;
+    background-color: theme.$gray_light;
+  }
+  &--bg--white{
+    background-color: theme.$white;
+  }
+  &__title{
+    
   }
 }
 .icon{
