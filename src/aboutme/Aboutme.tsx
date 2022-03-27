@@ -3,15 +3,10 @@ import {Card, CardText, CardTitle} from "./Card";
 import options from "../options";
 import {useEffect, useState} from "react";
 import "./Aboutme.scss"
-import {Props} from "../types";
+import {SectionProps} from "../types";
 import {getModuleData} from "../controllers/module_controller";
 
-interface AboutMeBlockProps extends Omit<Props,"children">{
-    bg:"white"|"lightGray";
-}
-
-
-export function AboutMeBlock(props: AboutMeBlockProps){
+export function AboutMeBlock(props: Omit<SectionProps, "children">){
     let [contentJSON, setContent] = useState({
         image:"",
         card:{
@@ -45,7 +40,7 @@ export function AboutMeBlock(props: AboutMeBlockProps){
     return(
         <div className ={"section " + className}>
             <div className={"aboutme section__aboutme"}>
-                <SquareImage size={"medium"}
+                <SquareImage size={"large"}
                              className = {"section__image"}
                              src={src===""?"":options.host+src}/>
 

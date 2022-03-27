@@ -1,9 +1,14 @@
 .squareImage{
   object-fit: cover;
   object-position: top;
-  &--size--medium{
+  //TODO mixin size
+  &--size--large{
     height:450px;
     width: 450px;
+  }
+  &--size--medium{
+    height:350px;
+    width: 350px;
   }
   &--size--small{
     height:250px;

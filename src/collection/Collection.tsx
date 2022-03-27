@@ -1,6 +1,6 @@
 import "./Collection.scss";
 import React, {useEffect, useState} from "react"
-import {Props} from "../header/types";
+import {Props} from "../types";
 import options from "../options";
 import {getModuleData} from "../controllers/module_controller";
 

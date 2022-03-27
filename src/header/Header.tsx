@@ -15,7 +15,7 @@ export default function Header (...props:any) {
                 <><i className = "icon uil uil-envelope"/>support@ukit.com</>
 
             </Contacts>
-            <Logo className = "header__logo logo--size--medium"/>
+            <Logo className = "logo header__logo logo--size--medium"/>
             <Contacts className= "header__social header__contacts--font--size--medium">
                 <><i className = "icon uil uil-facebook-f"/></>
                 <><i className = "icon uil uil-vk"/></>

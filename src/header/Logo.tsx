@@ -5,7 +5,9 @@ import {Props} from "../types";
 
 
 export default function Logo(props:Props) {
+    let className = props.className?props.className:"";
+
     return(
-        <img className = {"logo "+props.className} src={logo} alt=""/>
+        <img className = {"logo "+className} src={logo} alt=""/>
     );
 }

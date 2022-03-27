@@ -27,25 +27,35 @@ code {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 90%;
+    width: 60%;
   }
   &__title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header{
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-size: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 1rem;
     &::before, &::after{
+      margin: auto 0;
       width: 33%;
       content:"";
       display: inline-block;
       border-top: 2px solid theme.$orange;
-      margin-top: 1rem;
     }
   }
 
   &__card{
     margin:1rem 0;
+  }
+  &__logo{
+    margin:0.5rem auto 0;
   }
   &__image{
   }

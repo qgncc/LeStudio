@@ -1,16 +1,13 @@
 import "./Services.scss";
-import {Props} from "../types";
+import {SectionProps} from "../types";
 import {SquareImage} from "../aboutme/SquareImage";
 import options from "../options";
 import {useEffect, useState} from "react";
 import {Card, CardText, CardTitle} from "../aboutme/Card";
 import {getModuleData} from "../controllers/module_controller";
 //TODO: reorganize components;
-interface ServicesProps extends Omit<Props, "children">{
-    bg:"white"|"lightGray";
-}
 
-export function ServicesBlock(props:ServicesProps) {
+export function ServicesBlock(props:Omit<SectionProps, "children">) {
     let [content, setContent] = useState({
         items:[
             {
@@ -55,7 +52,7 @@ export function ServicesBlock(props:ServicesProps) {
 
         <section className={"section "+className}>
             <div className={"section__wrapper"}>
-                <div className="section__title">Услуги</div>
+                <div className="section__header">Услуги</div>
                 {elements}
             </div>
         </section>
