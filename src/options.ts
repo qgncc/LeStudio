@@ -1,4 +1,4 @@
 let options ={
-    host: "http://localhost:8080/"
+    host: "http://qgncc.com/static/"
 }
 export default options;
