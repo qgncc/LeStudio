@@ -1,9 +1,9 @@
 import "./StarsBlock.scss";
 import {useEffect, useState} from "react";
 import {getModuleData} from "../controllers/module_controller";
-import {SquareImage} from "../aboutme/SquareImage";
+import {SquareImage} from "../squareimage/SquareImage";
 import options from "../options";
-import Logo from "../header/Logo";
+import Logo from "../logo/Logo";
 import {SectionProps} from "../types";
 //TODO make custom hooks for fetching data;
 

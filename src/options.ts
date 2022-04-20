@@ -1,4 +1,4 @@
 let options ={
-    host: "http://qgncc.com/static/"
+    host: "http://lestudio.qgncc.com/",
 }
 export default options;

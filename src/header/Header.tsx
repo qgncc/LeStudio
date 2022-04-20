@@ -1,6 +1,6 @@
-import Contacts from "./Contacts";
-import Nav from "./Nav";
-import Logo from "./Logo";
+import Contacts from "../contacts/Contacts";
+import Nav from "../nav/Nav";
+import Logo from "../logo/Logo";
 import React from "react";
 import "./Header.scss";
 
@@ -17,9 +17,9 @@ export default function Header (...props:any) {
             </Contacts>
             <Logo className = "logo header__logo logo--size--medium"/>
             <Contacts className= "header__social header__contacts--font--size--medium">
-                <><i className = "icon uil uil-facebook-f"/></>
-                <><i className = "icon uil uil-vk"/></>
-                <><i className = "icon uil uil-twitter"/></>
+                <a href="#"><i className = "icon uil uil-telegram"/></a>
+                <a href="#"><i className = "icon uil uil-vk"/></a>
+                <a href="#"><i className = "icon uil uil-twitter"/></a>
             </Contacts>
 
             <Nav className = "header__nav nav--theme-main">

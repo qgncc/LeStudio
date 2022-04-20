@@ -72,4 +72,8 @@ code {
 .icon{
   font-size: 1em;
   padding: 0.2em;
+  color: black;
+  &:hover{
+    color: #444141;
+  }
 }

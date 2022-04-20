@@ -1,5 +1,5 @@
-import {SquareImage} from "./SquareImage";
-import {Card, CardText, CardTitle} from "./Card";
+import {SquareImage} from "../squareimage/SquareImage";
+import {Card, CardText, CardTitle} from "../card/Card";
 import options from "../options";
 import {useEffect, useState} from "react";
 import "./Aboutme.scss"

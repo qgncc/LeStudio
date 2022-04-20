@@ -1,9 +1,9 @@
 import "./Services.scss";
 import {SectionProps} from "../types";
-import {SquareImage} from "../aboutme/SquareImage";
+import {SquareImage} from "../squareimage/SquareImage";
 import options from "../options";
 import {useEffect, useState} from "react";
-import {Card, CardText, CardTitle} from "../aboutme/Card";
+import {Card, CardText, CardTitle} from "../card/Card";
 import {getModuleData} from "../controllers/module_controller";
 //TODO: reorganize components;
 

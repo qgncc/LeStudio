@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "./header/Header";
 import './App.css';
 import Collection from "./collection/Collection";
-import {AboutMeBlock} from "./aboutme/Aboutme";
+import {AboutMeBlock} from "./about-me/Aboutme";
 import {ServicesBlock} from "./services/Services";
 import {StarsBlock} from "./stars/StarsBlock";
 
