@@ -1,2 +1,1 @@
-### Сайт можно посмотреть на: 
-http://lestudio.qgncc.com/
+### Сайт можно посмотреть [тут](http://lestudio.qgncc.com/)
