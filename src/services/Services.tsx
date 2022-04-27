@@ -13,14 +13,16 @@ export function ServicesBlock(props:Omit<Props, "children">) {
     let elements = content.items.map((item,index)=>{
 
        return(
-           <Card className={"services__card"} size={"small"} key = {index}>
+           <Card className="services__card" size={"small"} key = {index}>
                <img className="services__img" alt = "Example" src={options.host+item.image.src}/>
-               <CardTitle fontSize="2">
-                   {item.text.title}
-               </CardTitle>
-               <CardText>
-                   {item.text.content}
-               </CardText>
+               <div className="services__text">
+                   <CardTitle fontSize="2">
+                       {item.text.title}
+                   </CardTitle>
+                   <CardText>
+                       {item.text.content}
+                   </CardText>
+               </div>
            </Card>
        )
     });
