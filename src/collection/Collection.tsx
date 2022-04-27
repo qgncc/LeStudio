@@ -1,36 +1,23 @@
 import "./Collection.scss";
 import React, {useEffect, useState} from "react"
-import {Props} from "../types";
+import {CollectionJSON, Props} from "../types";
 import options from "../options";
 import {getModuleData} from "../controllers/module_controller";
+import {useFetchData} from "../hooks/useFetchData";
 
 
 
 export default function Collection(props: Omit<Props,"children">) {
-    let [images, setImages] = useState({
-        items:[
-            {
-                src: "",
-                text: ""
-            }
-        ]
-    });
-
-
-
-    useEffect(()=>{
-        getModuleData("collection")
-            .then(data=>setImages(data));
-    },[]);
+    let images = useFetchData("collection") as CollectionJSON
 
     let elements = images.items.map((item,index)=>{
         return(
-            <div style={{backgroundImage:`url(${options.host+item.src})`}}
-                 className = "collection__item"
-                 key={index}>
+            <div className="collection__item" key={index}>
+                <img src={options.host+item.src}
+                     className = "collection__img" alt={item.text}
+                     />
                 <div className = "collection__text"> {item.text}</div>
             </div>
-
         );
     })
 

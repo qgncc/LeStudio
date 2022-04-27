@@ -6,8 +6,20 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 0.8em 0;
+  padding: 1.85em 0;
 
+  &__toggle_button{
+    display: none;
+    background-color: inherit;
+    border: 0;
+    font-size: 2rem;
+    color: theme.$black;
+    &:hover{
+      cursor: pointer;
+      color: theme.$nav_link_text_hover_main;
+      background-color: theme.$nav_link_background_hover_main;
+    }
+  }
   &__link{
     padding: 0.7em 1.5em;
     display: inline;
@@ -21,5 +33,26 @@
   }
   &--theme-main{
     background-color: theme.$nav_background_main;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .nav{
+    padding: 0.5em 0;
+    &__toggle_button {
+      display: block;
+    }
+    &__links{
+      display: none;
+      flex-direction: column;
+    }
+    &__links--open{
+      display: flex;
+    }
+    &__link{
+      text-align: center;
+      border: 0;
+    }
+    flex-direction: column;
   }
 }

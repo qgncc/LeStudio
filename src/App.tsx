@@ -5,6 +5,7 @@ import Collection from "./collection/Collection";
 import {AboutMeBlock} from "./about-me/Aboutme";
 import {ServicesBlock} from "./services/Services";
 import {StarsBlock} from "./stars/StarsBlock";
+import {Section} from "./section/Section";
 
 // function hashCode(str:string) {
 //     let hash = 0, i, chr;
@@ -24,9 +25,9 @@ function App() {
         <div className="App">
             <Header/>
             <Collection/>
-            <AboutMeBlock bg="lightGray"/>
-            <ServicesBlock bg="white"/>
-            <StarsBlock bg="lightGray"/>
+            <AboutMeBlock/>
+            <ServicesBlock/>
+            <StarsBlock/>
         </div>
 );
 }

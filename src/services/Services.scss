@@ -1,0 +1,41 @@
+.services{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__card{
+    &+&{
+      margin-left:1rem;
+    }
+    flex:1;
+    min-width: 185px;
+    margin-top: 1rem;
+    max-width: 29rem;
+
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+  }
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .services{
+    flex-direction: column;
+    align-items: center;
+    &__card{
+      flex-direction: row;
+      &+&{
+        margin-left:0;
+      }
+    }
+    &__img{
+    }
+  }
+}

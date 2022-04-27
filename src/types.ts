@@ -7,3 +7,40 @@ export interface Props{
 export interface SectionProps extends Props{
     bg:"white"|"lightGray";
 }
+
+export interface AboutMeBlockJSON{
+    card:{
+            title: string,
+            content:{
+                highlighted:boolean,
+                text:string
+            }[]
+        },
+    image:string
+}
+export interface ServicesJSON{
+    items: {
+                image: {
+                    src:string,
+                    alt:string,
+                },
+                text: {
+                    title:string,
+                    content:string,
+                }
+            }[]
+}
+export interface StarsJSON{
+    items:{
+            src:string,
+            alt:string
+        }[]
+
+}
+export interface CollectionJSON{
+    items:{
+            src: string,
+            text: string
+    }[]
+}
+export type Modules = "aboutme"|"services"|"collection"|"stars";

@@ -1,6 +1,8 @@
 .squareImage{
-  object-fit: cover;
-  object-position: top;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   //TODO mixin size
   &--size--large{
     height:450px;
@@ -13,5 +15,10 @@
   &--size--small{
     height:250px;
     width: 250px;
+  }
+  &--size--responsive{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
   }
 }

@@ -1,0 +1,32 @@
+.stars{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__img{
+    margin-top: 1rem;
+    width: 24%;
+    max-width: 450px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .stars{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &__img{
+      max-width: max-content;
+      width: 95%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: top;
+    }
+
+  }
+}

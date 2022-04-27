@@ -1,0 +1,28 @@
+@use "../theme";
+
+.section{
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 2rem 0;
+  &__content{
+    width: 75%;
+  }
+
+
+  &__logo{
+    margin:0.5rem auto 0;
+  }
+  &--bg--lightGray{
+    background-color: theme.$gray_light;
+  }
+  &--bg--white{
+    background-color: theme.$white;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section{
+    &__content {
+      width: 95%;
+    }
+  }
+}

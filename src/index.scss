@@ -15,60 +15,7 @@ code {
     monospace;
 }
 
-.section{
-  display: flex;
-  justify-content: center;
-  padding: 4rem 0 2rem 0;
-  &__aboutme{
-  }
-  &__wrapper{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 60%;
-  }
-  &__title{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-  &__header{
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 2rem;
-    margin-block-start: 0;
-    margin-block-end: 1rem;
-    &::before, &::after{
-      margin: auto 0;
-      width: 33%;
-      content:"";
-      display: inline-block;
-      border-top: 2px solid theme.$orange;
-    }
-  }
 
-  &__card{
-    margin:1rem 0;
-  }
-  &__logo{
-    margin:0.5rem auto 0;
-  }
-  &__image{
-  }
-  &--bg--lightGray{
-    background-color: theme.$gray_light;
-  }
-  &--bg--white{
-    background-color: theme.$white;
-  }
-  &__title{
-    
-  }
-}
 .icon{
   font-size: 1em;
   padding: 0.2em;
@@ -77,3 +24,4 @@ code {
     color: #444141;
   }
 }
+

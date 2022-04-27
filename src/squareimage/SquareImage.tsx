@@ -1,17 +1,21 @@
 import "./SquareImage.scss";
 import {Props} from "../types";
+import loadImg from "../img/loading.svg";
 
 interface SquareImageProps extends Omit<Props, "children">{
     src:string,
-    size:"small"|"medium"|"large",
+    alt: string
+    size:"small"|"medium"|"large"|"responsive",
 }
 
 
 export function SquareImage(props: SquareImageProps) {
     let className = props.className === undefined? "": props.className;
-    className+= " squareImage--size--"+props.size;
+    className+= props.size? " squareImage--size--"+props.size: "";
     return(
-        <img src={props.src}
-             className ={"squareImage "+ className}/>
+        props.src === ""?
+                <div className ={"squareImage "+className} style={{backgroundImage:"url("+loadImg+")"}}/>
+                :
+                <div className ={"squareImage "+className} style={{backgroundImage: "url(" + props.src + ")"}}/>
     );
 }

@@ -19,12 +19,12 @@
       border-radius: 2px;
     }
   }
-  $i:4;
+  $i:1;
   @each $size in extraSmall,small,medium,large{
     &--size--#{$size}{
-      width:#{95/$i+"%"};
+      min-width: #{100+50*$i+"px"};
     }
-    $i:$i - 1;
+    $i:$i + 1;
   }
   &--size--min-content{
     flex-basis: min-content;
