@@ -10,6 +10,7 @@ export default function Nav(props:Props) {
     function onClick() {
         if(!ref || !ref.current) return;
         ref.current.classList.toggle("nav__links--open");
+        setIsOpen(!isOpen);
     }
     return(
         <nav className ={"nav " + props.className}>
