@@ -1,0 +1,41 @@
+import "./Reviews.scss";
+import {ServicesJSON, Props, ReviewsJSON} from "../types";
+import options from "../options";
+import {Card, CardText, CardTitle} from "../card/Card";
+import {useFetchData} from "../hooks/useFetchData";
+import {Section, SectionContent} from "../section/Section";
+import {Title} from "../title/Title";
+//TODO: reorganize components;
+
+export function ReviewsBlock(props:Omit<Props, "children">) {
+    let content = useFetchData("reviews") as ReviewsJSON
+
+    let elements = content.items.map((item,index)=>{
+
+       return(
+           <Card className="reviews__card" size={"small"} key = {index}>
+               <img className="reviews__img" alt = "Example" src={options.host+item.image.src}/>
+               <div className="reviews__text">
+                   <CardTitle fontSize="2">
+                       {item.text.title}
+                   </CardTitle>
+                   <CardText>
+                       {item.text.content}
+                   </CardText>
+               </div>
+           </Card>
+       )
+    });
+
+    let className = props.className?props.className:"";
+
+    return(
+
+        <Section bg="white">
+            <SectionContent className="reviews">
+                <Title>Отзывы</Title>
+                {elements}
+            </SectionContent>
+        </Section>
+    )
+}

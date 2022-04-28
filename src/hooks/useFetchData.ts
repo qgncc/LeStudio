@@ -28,6 +28,19 @@ export function useFetchData(module:Modules){
                 }
             }]
         }
+    }else if(module === "reviews"){
+        beforeLoadingContent = {
+            items: [{
+                image: {
+                    src: "",
+                    alt: "loading",
+                },
+                text: {
+                    title: "Loading...",
+                    content: "Loading...",
+                }
+            }]
+        }
     }else if(module === "stars"){
         beforeLoadingContent ={
             items:[

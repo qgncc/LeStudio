@@ -30,6 +30,18 @@ export interface ServicesJSON{
                 }
             }[]
 }
+export interface ReviewsJSON{
+    items: {
+                image: {
+                    src:string,
+                    alt:string,
+                },
+                text: {
+                    title:string,
+                    content:string,
+                }
+            }[]
+}
 export interface StarsJSON{
     items:{
             src:string,
@@ -43,4 +55,4 @@ export interface CollectionJSON{
             text: string
     }[]
 }
-export type Modules = "aboutme"|"services"|"collection"|"stars";
+export type Modules = "reviews"|"aboutme"|"services"|"collection"|"stars";

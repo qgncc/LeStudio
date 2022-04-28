@@ -1,0 +1,49 @@
+.reviews{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__card{
+    &+&{
+      margin-left:1rem;
+    }
+    flex:1;
+    min-width: 185px;
+    margin-top: 1rem;
+
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+  }
+  &__text{
+    flex-direction: column;
+  }
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .reviews{
+    flex-direction: column;
+    align-items: center;
+    &__card{
+      &+&{
+        margin-left:0;
+      }
+      flex-direction: row;
+    }
+    &__img{
+      flex:1 1;
+    }
+    &__text{
+      flex:2 2;
+      padding-left: 1rem;
+    }
+
+  }
+}
