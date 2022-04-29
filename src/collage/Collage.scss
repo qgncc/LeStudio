@@ -1,0 +1,21 @@
+.collage{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  &__row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+      &+&{
+        margin-top: 1rem;
+      }
+  }
+  &__img{
+    display: flex;
+    flex:1;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+  }
+}

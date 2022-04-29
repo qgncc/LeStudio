@@ -2,7 +2,7 @@ import {ReactNode} from "react";
 
 export interface Props{
     className?: string;
-    children?: ReactNode[]|ReactNode;
+    children: ReactNode[]|ReactNode;
 }
 export interface SectionProps extends Props{
     bg:"white"|"lightGray"|"darkGray";
@@ -55,4 +55,4 @@ export interface CollectionJSON{
             text: string
     }[]
 }
-export type Modules = "reviews"|"aboutme"|"services"|"collection"|"stars";
+export type Modules = "collage"|"reviews"|"aboutme"|"services"|"collection"|"stars";

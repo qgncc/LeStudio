@@ -1,24 +1,33 @@
+@mixin size($name,$size){
+  &--size--#{$name}{
+    max-height:$size+px;
+    max-width: $size+px;
+    //@media screen and (min-width: 1500px){
+    //  max-height:$size+200+px;
+    //  max-width: $size+200+px;
+    //}
+  }
+}
+
 .squareImage{
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  //TODO mixin size
-  &--size--large{
-    height:450px;
-    width: 450px;
+  width: 100%;
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
   }
-  &--size--medium{
-    height:350px;
-    width: 350px;
-  }
-  &--size--small{
-    height:250px;
-    width: 250px;
-  }
-  &--size--responsive{
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1;
-  }
+  @include size(extraLarge,600);
+  @include size(large,500);
+  @include size(medium,400);
+  @include size(small,300);
+  @include size(extraSmall,200);
+  @include size(tiny,100);
+  @include size(icon,50);
+
+
 }

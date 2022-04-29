@@ -5,6 +5,7 @@ import {Card, CardText, CardTitle} from "../card/Card";
 import {useFetchData} from "../hooks/useFetchData";
 import {Section, SectionContent} from "../section/Section";
 import {Title} from "../title/Title";
+import {SquareImage} from "../squareimage/SquareImage";
 //TODO: reorganize components;
 
 export function ServicesBlock(props:Omit<Props, "children">) {
@@ -14,7 +15,7 @@ export function ServicesBlock(props:Omit<Props, "children">) {
 
        return(
            <Card className="services__card" size={"small"} key = {index}>
-               <img className="services__img" alt = "Example" src={options.host+item.image.src}/>
+               <SquareImage size="medium" className="services__img" alt = "Example" src={item.image.src}/>
                <div className="services__text">
                    <CardTitle color = "black" fontSize="2">
                        {item.text.title}

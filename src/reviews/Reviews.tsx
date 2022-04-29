@@ -5,6 +5,7 @@ import {Card, CardText, CardTitle} from "../card/Card";
 import {useFetchData} from "../hooks/useFetchData";
 import {Section, SectionContent} from "../section/Section";
 import {Title} from "../title/Title";
+import {SquareImage} from "../squareimage/SquareImage";
 //TODO: reorganize components;
 
 export function ReviewsBlock(props:Omit<Props, "children">) {
@@ -14,7 +15,7 @@ export function ReviewsBlock(props:Omit<Props, "children">) {
 
        return(
            <Card className="reviews__card" size={"small"} key = {index}>
-               <img className="reviews__img" alt = "Example" src={options.host+item.image.src}/>
+               <SquareImage size="medium" className="reviews__img" alt = "Example" src={item.image.src}/>
                <div className="reviews__text">
                    <CardTitle color = "black" fontSize="2">
                        {item.text.title}

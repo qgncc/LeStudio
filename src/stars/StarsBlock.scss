@@ -1,31 +1,36 @@
 .stars{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   &__img{
     margin-top: 1rem;
-    width: 24%;
-    max-width: 450px;
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: top;
+    &+& {
+      margin-left: 1rem;
+    }
+  }
+  &__images{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
   }
 
 }
 
 @media screen and (max-width: 800px) {
   .stars{
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    &__images{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     &__img{
-      max-width: max-content;
+      &+& {
+        margin-left: 0;
+      }
       width: 95%;
-      aspect-ratio: 1;
-      object-fit: cover;
-      object-position: top;
     }
 
   }

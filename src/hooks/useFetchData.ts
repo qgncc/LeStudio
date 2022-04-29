@@ -50,6 +50,15 @@ export function useFetchData(module:Modules){
                 }
             ]
         }
+    }else if(module === "collage"){
+        beforeLoadingContent = {
+            items: [
+                {
+                    src: "../img/loading.svg",
+                    text: "Loading..."
+                }
+            ]
+        }
     }else if(module === "collection"){
         beforeLoadingContent ={
             items:[

@@ -15,7 +15,10 @@ export function StarsBlock(props:Omit<Props, "children">) {
     let elements = content.items.map((element, index)=>{
         return(
             //TODO key = hash(src)
-                <img className = "stars__img" alt="Star" key={index} src={options.host+element.src}/>
+                <SquareImage size="medium"
+                             className = "stars__img"
+                             alt="Star" key={index}
+                             src={element.src}/>
         );
     });
 
@@ -27,7 +30,9 @@ export function StarsBlock(props:Omit<Props, "children">) {
                 <Title className = "stars__title">
                     Звезды в одежде <Logo type="black" className="section__logo logo--size--medium"/>
                 </Title>
-                {elements}
+                <div className="stars__images">
+                    {elements}
+                </div>
             </SectionContent>
         </Section>
     );

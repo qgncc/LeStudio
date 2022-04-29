@@ -4,6 +4,7 @@ import "./Aboutme.scss"
 import {AboutMeBlockJSON, Props} from "../types";
 import {useFetchData} from "../hooks/useFetchData";
 import {Section, SectionContent} from "../section/Section";
+import {SquareImage} from "../squareimage/SquareImage";
 
 export function AboutMeBlock(props: Omit<Props, "children">){
     let contentJSON = useFetchData("aboutme") as AboutMeBlockJSON;
@@ -23,9 +24,11 @@ export function AboutMeBlock(props: Omit<Props, "children">){
         <Section bg="lightGray">
             <SectionContent>
                 <div className={"aboutme "+className}>
-                    <img className = {"aboutme__img"}
-                         src={src===""?"":options.host+src}
-                         alt = "Me"/>
+                    <SquareImage
+                        className = {"aboutme__img"}
+                        src={src===""?"":src}
+                        size = "large"
+                        alt = "Me"/>
 
                     <Card size={"medium"} className={"aboutme__card"}>
                         {cardContent}
