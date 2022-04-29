@@ -9,7 +9,6 @@
       margin-left:1rem;
     }
     flex:1;
-    min-width: 185px;
     margin-top: 1rem;
 
   }
@@ -35,13 +34,13 @@
       &+&{
         margin-left:0;
       }
-      flex-direction: row;
+      margin-top: 2rem;
     }
     &__img{
-      flex:1 1;
+      width: 95%;
     }
     &__text{
-      flex:2 2;
+      width: 100%;
       padding-left: 1rem;
     }
 

@@ -16,10 +16,10 @@ export function ServicesBlock(props:Omit<Props, "children">) {
            <Card className="services__card" size={"small"} key = {index}>
                <img className="services__img" alt = "Example" src={options.host+item.image.src}/>
                <div className="services__text">
-                   <CardTitle fontSize="2">
+                   <CardTitle color = "black" fontSize="2">
                        {item.text.title}
                    </CardTitle>
-                   <CardText>
+                   <CardText color = "black">
                        {item.text.content}
                    </CardText>
                </div>

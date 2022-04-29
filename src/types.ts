@@ -5,7 +5,7 @@ export interface Props{
     children?: ReactNode[]|ReactNode;
 }
 export interface SectionProps extends Props{
-    bg:"white"|"lightGray";
+    bg:"white"|"lightGray"|"darkGray";
 }
 
 export interface AboutMeBlockJSON{

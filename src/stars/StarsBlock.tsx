@@ -25,7 +25,7 @@ export function StarsBlock(props:Omit<Props, "children">) {
         <Section  bg="lightGray">
             <SectionContent className = {"stars "+className}>
                 <Title className = "stars__title">
-                    Звезды в одежде <Logo className="section__logo logo--size--medium"/>
+                    Звезды в одежде <Logo type="black" className="section__logo logo--size--medium"/>
                 </Title>
                 {elements}
             </SectionContent>

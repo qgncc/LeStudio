@@ -21,9 +21,10 @@ export default function Collection(props: Omit<Props,"children">) {
         );
     })
 
+    let className = props.className?props.className:"";
 
     return(
-        <section className ={"collection "+ props.className}>
+        <section className ={"collection "+ className}>
             <div className="collection__view">
                 {elements}
             </div>

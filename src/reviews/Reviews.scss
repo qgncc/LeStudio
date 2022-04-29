@@ -5,11 +5,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   &__card{
+    align-items: center;
     &+&{
       margin-left:1rem;
     }
     flex:1;
-    min-width: 185px;
     margin-top: 1rem;
 
   }
@@ -31,18 +31,19 @@
   .reviews{
     flex-direction: column;
     align-items: center;
+
+    &__img{
+      width: 95%;
+    }
+    &__text{
+      width: 100%;
+      padding-left: 1rem;
+    }
     &__card{
       &+&{
         margin-left:0;
       }
-      flex-direction: row;
-    }
-    &__img{
-      flex:1 1;
-    }
-    &__text{
-      flex:2 2;
-      padding-left: 1rem;
+      margin-top: 2rem;
     }
 
   }

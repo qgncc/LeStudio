@@ -8,12 +8,26 @@
     min-width: 45%;
     flex: 2;
     margin-left: 2rem;
+    flex-direction: column;
   }
   &__img{
-    flex:1 1;
-    aspect-ratio: 1;
     max-width: 500px;
+    width: 100%;
+    aspect-ratio: 1;
     object-fit: cover;
     object-position: top;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutme{
+    flex-direction: column;
+    &__img{
+      width: 100%;
+      flex:1;
+    }
+    &__card{
+      margin-left: 0;
+    }
   }
 }

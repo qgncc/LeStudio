@@ -7,6 +7,7 @@ import {ServicesBlock} from "./services/Services";
 import {StarsBlock} from "./stars/StarsBlock";
 import {Section} from "./section/Section";
 import {ReviewsBlock} from "./reviews/Reviews";
+import {Footer} from "./footer/Footer";
 
 // function hashCode(str:string) {
 //     let hash = 0, i, chr;
@@ -30,6 +31,7 @@ function App() {
             <ServicesBlock/>
             <StarsBlock/>
             <ReviewsBlock/>
+            <Footer/>
         </div>
 );
 }

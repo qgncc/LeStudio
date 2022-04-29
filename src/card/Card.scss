@@ -18,15 +18,32 @@
       border-left: 5px solid theme.$aboutme_card_text_highlighted_border_main;
       border-radius: 2px;
     }
+    &--color--white{
+      color: theme.$white;
+    }
+    &--color--black{
+      color: theme.$black;
+    }
   }
-  $i:1;
+  $i: 4;
   @each $size in extraSmall,small,medium,large{
     &--size--#{$size}{
-      min-width: #{100+50*$i+"px"};
+      width: #{100/$i+"%"};
     }
-    $i:$i + 1;
+    $i:$i - 1;
   }
   &--size--min-content{
     flex-basis: min-content;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+  .card{
+    &+&{
+      margin-left:0;
+    }
+    margin-left: 0;
+    width: 98%;
   }
 }
