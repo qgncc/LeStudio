@@ -2,10 +2,10 @@
 
 ----
 # Сайт-лендинг ателье LeStudio
-###Стек:
+### Стек:
 HTML/SCSS/TypeScript React
 
-###TODO:
+### TODO:
 + CMS
 + Карусели
 + Красивую иконку
