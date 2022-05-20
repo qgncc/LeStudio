@@ -1,12 +1,11 @@
-____
-Сайт можно посмотреть [тут](http://lestudio.qgncc.com/)
-____
+>Сайт можно посмотреть [тут](http://lestudio.qgncc.com/)
+
 # Сайт-лендинг ателье LeStudio
 ### Стек:
 HTML/SCSS/TypeScript React
 
 ### TODO:
-+ CMS
-+ Карусели
-+ Красивую иконку
-+ SSR
+:black_square_button: CMS
+:black_square_button: Карусели
+:black_square_button: Красивую иконку
+:black_square_button: SSR
