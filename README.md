@@ -9,3 +9,4 @@ HTML/SCSS/TypeScript React
 + CMS
 + Карусели
 + Красивую иконку
++ SSR
