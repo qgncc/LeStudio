@@ -1,4 +1,4 @@
-### Сайт можно посмотреть [тут](http://lestudio.qgncc.com/)
+Сайт можно посмотреть [тут](http://lestudio.qgncc.com/)
 
 ----
 # Сайт-лендинг ателье LeStudio
